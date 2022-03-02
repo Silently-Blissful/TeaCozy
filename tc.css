@@ -1,0 +1,178 @@
+/*universal styles*/
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetia", sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+/*header flex container*/
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+/*header flex elements*/
+header {
+    height: 69px;
+    width: 100%;
+
+    background-color: #000;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+}
+
+/* Header Navigation bar*/
+.logo img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+nav ul li {
+    display: inline-flex;
+    text-decoration: underline;
+    padding: 0 20px;
+}
+
+h2, h3, h4, h5 {
+    padding:0;
+    margin: 15px 0;
+}
+
+/* mission */
+#main-section {
+    max-width: 1200px;
+    /*flex-basis: 1200px;*/
+    padding-top: 69px;
+    margin: 0 auto; /* centers the image left and right*/
+}
+
+.mission-wrapper {
+    background-image: url("./pics/mission-background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+#main-section .mission-statement {
+    background-color: black;
+    width: 100%;
+    margin: auto 0;
+  }
+
+  /* gallery section */
+
+.gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+  }
+
+.gallery-container {
+      flex-basis: 1000px;
+  }
+
+.img-item img {
+height: 200px;
+width: 300px;
+margin: 15px;
+}
+
+.img-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+/*.gallery h4 {
+      margin:0.5em;
+ }*/
+
+ #locality {
+    background-image: url('./pics/locations-background.webp');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 69px;
+ }
+
+ .local-container {
+     display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     max-width: 100%;
+     margin: 0 auto;
+
+ }
+
+ #locality h2 {
+     width: 100%;
+     top: 0;
+     margin-top: 3em;
+    /*margin-bottom: 15px;*/
+ }
+
+.local-item {
+     width: 300px;
+     height: 250px;
+     background-color: #000;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     margin: 15px 40px;
+     opacity: 1;
+ }
+
+ address {
+     line-height: 60px;
+ }
+
+ /* footer section*/
+ .contact {
+     height: 200px;
+     line-height: 40px;
+ }
+
+ .copyright {
+     text-align: left;
+ }
+
+ /* Media Queries */
+
+ /* header section */
+ @media screen and (max-width: 320px) {
+     .logo {
+         display: block;
+         width: 100%;
+         justify-content: center;
+     }
+
+     nav ul li {
+         /*cursor: pointer;*/
+         color: red;
+         font-size: 1.5em;
+         text-decoration: none;
+         display: block;
+         justify-content: center;
+         font-weight: bold;
+
+     }
+ }
